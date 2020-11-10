@@ -1,6 +1,10 @@
-<%= simple_form_for(@article) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :content %>
-  <%= f.submit %>
-<% end %>
-<h3><%= link_to "⬅️ Go back to all articles", articles_path %></h3>
+<div class="container">
+  <h3>Create a new Article</h3>
+  <%= simple_form_for(@article) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit %>
+  <% end %>
+</br>
+  <h3><%= link_to "⬅️ Go back to all articles", articles_path %></h3>
+</div>
